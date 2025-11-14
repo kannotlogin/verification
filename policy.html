@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Policy — KannotLogin</title>
+  <style>
+    :root{
+      --bg:#101010;
+      --card:#0f1113;
+      --muted:#9aa3b2;
+      --radius:12px;
+      --maxw:900px;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      padding:28px;
+      display:flex;
+      justify-content:center;
+      background: var(--bg);
+      position:relative;
+      overflow-x:hidden;
+    }
+
+    /* full-viewport accent overlay */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-1;
+      pointer-events:none;
+      background:
+        radial-gradient(600px 400px at 10% 20%, rgba(0,116,43,0.06), transparent 20%),
+        radial-gradient(500px 350px at 80% 30%, rgba(0,255,110,0.045), transparent 25%),
+        radial-gradient(700px 420px at 30% 80%, rgba(255,53,0,0.035), transparent 20%),
+        radial-gradient(560px 380px at 80% 80%, rgba(0,73,156,0.045), transparent 25%);
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      mix-blend-mode:screen;
+      opacity:1;
+    }
+
+    .container{ width:100%; max-width:var(--maxw); }
+    header{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+    header h1{ margin:0; font-size:20px }
+    .meta{ color:var(--muted); font-size:13px }
+
+    article{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+      border-radius:var(--radius);
+      padding:26px;
+      border:1px solid rgba(255,255,255,0.02);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    }
+    h2{ color:#fff; margin-top:18px }
+    p{ color:var(--muted); line-height:1.6 }
+    ul{ color:var(--muted); padding-left:18px }
+    .small{ font-size:13px; color:var(--muted) }
+    a { color: #8fd6ff; text-decoration: none; }
+    footer{ margin-top:18px; color:var(--muted); font-size:13px }
+    .back{ display:inline-block; margin-bottom:10px; padding:8px 12px; background:transparent; border-radius:10px; border:1px solid rgba(255,255,255,0.03); color:var(--muted); text-decoration:none }
+    .tiny-logo{ width:40px; height:40px; display:block; }
+    .tiny-logo img{ width:100%; height:100%; object-fit:contain; filter: drop-shadow(0 6px 18px rgba(0,0,0,0.5)); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="tiny-logo" aria-hidden="true">
+        <img src="logo.svg" alt="KannotLogin logo">
+      </div>
+      <div>
+        <h1>Policy & Privacy</h1>
+        <div class="meta">Last updated: 14 November 2025</div>
+      </div>
+    </header>
+
+    <a class="back" href="index.html">← Back to home</a>
+
+    <article>
+      <h2>1. Introduction</h2>
+      <p>Welcome to KannotLogin. Our platform makes it simple to connect apps, share experiences and manage accounts across services. This policy explains what we collect, how we use it, and the protections we put in place.</p>
+
+      <h2>2. What we collect</h2>
+      <p>We collect data necessary for connecting apps and safely sharing experiences:</p>
+      <ul>
+        <li><strong>Account data:</strong> email address, display name (optional), integration settings.</li>
+        <li><strong>Connection metadata:</strong> which apps are connected, sync status, permissions granted (we do not store external passwords unless explicitly authorized).</li>
+        <li><strong>Shared-experience metadata:</strong> data required to replicate or share user sessions/experiences where permitted by the user and the connected services.</li>
+        <li><strong>Logs & diagnostics:</strong> technical logs for debugging and security.</li>
+      </ul>
+
+      <h2>3. How we use data</h2>
+      <p>We use data to:</p>
+      <ul>
+        <li>Enable integrations and share experiences between connected apps.</li>
+        <li>Perform synchronization and automated workflows.</li>
+        <li>Maintain security, detect abuse and protect users.</li>
+        <li>Communicate about status, updates and support.</li>
+      </ul>
+
+      <h2>4. Data sharing</h2>
+      <p>We do not share personal data except:</p>
+      <ul>
+        <li>When you explicitly authorize an integration that requires data exchange.</li>
+        <li>When necessary to provide the integration (e.g. sending data to the third-party service you've connected).</li>
+        <li>When required by law (e.g. valid legal request).</li>
+        <li>With vendors (hosting, analytics) under strict processing agreements.</li>
+      </ul>
+
+      <h2>5. Security</h2>
+      <p>We use encryption in transit (TLS), secure storage practices where needed, role-based access controls and regular security reviews. Sharing accounts/experiences is only performed with appropriate permissions and audit trails.</p>
+
+      <h2>6. Cookies & tracking</h2>
+      <p>We use only essential cookies for sessions and security. Optional anonymized telemetry for service health may be collected; you can opt out where available.</p>
+
+      <h2>7. Your rights</h2>
+      <p>You can:</p>
+      <ul>
+        <li>Request access to your personal data.</li>
+        <li>Request correction or deletion where feasible.</li>
+        <li>Object to processing or request data portability.</li>
+      </ul>
+      <p class="small">For requests, contact <a href="mailto:business@kannotlogin.com">business@kannotlogin.com</a>.</p>
+
+      <h2>8. Acceptable use</h2>
+      <p>Do not use the platform to perform illegal actions, distribute harmful content, or bypass security controls. Sharing accounts or experiences must comply with the terms of the connected services; misuse may lead to account suspension.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>We may update this policy. Significant changes will be communicated. Check this page for the latest version.</p>
+
+      <h2>10. Contact</h2>
+      <p>Questions? Contact <a href="mailto:business@kannotlogin.com">business@kannotlogin.com</a>.</p>
+
+      <footer style="margin-top:18px;color:var(--muted);font-size:13px">
+        © KannotLogin — All rights reserved.
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
